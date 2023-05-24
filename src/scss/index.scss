@@ -1,0 +1,19 @@
+* {
+    font-family: "Museo Sans Cyrl", sans-serif;
+}
+
+.container {
+    position: relative;
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+
+@import "base/mixins";
+@import "base/variables";
+
+// @import "blocks/header";
+
+@import "section/main";
+
+@import "media";
