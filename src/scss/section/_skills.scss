@@ -1,0 +1,16 @@
+.skills {
+    min-height: 600px;
+    padding: 90px 0 80px;
+    background-color: $bg-main;
+    &__list {
+        display: block;
+        margin: 0 auto;
+        width: 300px;
+        color: #666;
+        font-size: 20px;
+        // list-style-type: none;
+    }
+    &__list-item {
+
+    }
+}

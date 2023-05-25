@@ -1,5 +1,5 @@
 * {
-    font-family: "Museo Sans Cyrl", sans-serif;
+	font-family: "Roboto", sans-serif;
 }
 
 .container {
@@ -8,12 +8,22 @@
     margin: 0 auto;
 }
 
+body {
+    background-color: #ffffff;
+}
+
 
 @import "base/mixins";
 @import "base/variables";
 
-// @import "blocks/header";
+@import "blocks/header";
+@import "blocks/title";
+@import "blocks/line";
 
-@import "section/main";
+@import "section/hello";
+@import "section/projects";
+@import "section/skills";
+@import "section/contacts";
+@import "section/footer";
 
 @import "media";

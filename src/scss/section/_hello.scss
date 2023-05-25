@@ -1,0 +1,34 @@
+.hello {
+    min-height: 600px;
+    position: relative;
+    @include bg;
+    background-image: url("../img/bg3.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__bg {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,.56);
+        opacity: 1;
+    }
+    &__info {
+        text-align: center;
+    }
+    &__title {
+        margin: 0;
+        font-weight: 400;
+        font-size: 16px;
+        font-style: normal;
+        text-transform: none;
+        color: $text-second;
+    }
+    &__subtitle {
+        margin: 10px 0 0;
+        font-weight: 700;
+        font-size: 40px;
+        text-transform: none;
+        color: $text-second;
+    }
+}

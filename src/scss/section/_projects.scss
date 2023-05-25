@@ -1,0 +1,19 @@
+.projects {
+    min-height: 600px;
+    padding: 90px 0 80px;
+    background-color: $bg-second;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__wrapper-item {
+        width: 300px;
+        height: 400px;
+        background-color: $block-main;
+        margin-bottom: 20px;
+        &:nth-child(n+4) {
+            margin-bottom: 0;
+        }
+    }
+}
