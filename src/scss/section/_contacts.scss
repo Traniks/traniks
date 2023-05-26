@@ -1,4 +1,8 @@
 .contacts {
-    min-height: 400px;
+    min-height: 600px;
+    padding: 100px 0 90px;
     background-color: $bg-second;
+    &__form {
+        margin: 40px auto 0 auto;
+    }
 }

@@ -1,4 +1,40 @@
 .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     min-height: 150px;
     background-color: $bg-footer;
+    &__list {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        &-item {
+            width: 36px;
+            height: 36px;
+            border: solid #a9a9a9 1px;
+            border-radius: 15px;
+            margin: 0 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            span {
+                color: #a9a9a9;
+            }
+            &:hover {
+                border: solid $text-second 1px;
+                span {
+                    color: $text-second;
+                }
+            }
+        }
+    }
+    &__copyright {
+        margin-top: 15px;
+        color: $text-second;
+        text-align: center;
+    }
 }

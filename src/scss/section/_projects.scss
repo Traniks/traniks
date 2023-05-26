@@ -1,8 +1,9 @@
 .projects {
     min-height: 600px;
-    padding: 90px 0 80px;
+    padding: 100px 0 90px;
     background-color: $bg-second;
     &__wrapper {
+        margin-top: 20px;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;

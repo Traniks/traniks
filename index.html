@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="src/css/fonts.css">
+    <link rel="stylesheet" href="src/css/icons.css">
     <link rel="stylesheet" href="src/css/index.min.css">
     <title>Summary</title>
 </head>
@@ -43,6 +44,7 @@
                 <div class="projects__content">
                     <h2 class="title">мои работы</h2>
                     <hr class="line">
+                    <h3 class="subtitle_bg-second">Это все мои работы:</h3>
                     <div class="projects__wrapper">
 
                         <!-- item-1 -->
@@ -84,6 +86,7 @@
             <div class="container">
                 <h2 class="title">мои навыки</h2>
                 <hr class="line">
+                <h3 class="subtitle_bg-white">На данный этап я обладаю знаниями о:</h3>
                 <ul class="skills__list">
                     <li class="skills__list-item">HTML(5) & CSS(3)</li>
                     <li class="skills__list-item">HTML & CSS</li>
@@ -95,11 +98,48 @@
         </section>
 
         <section class="contacts">
-
+            <div class="container">
+                <h2 class="title">напишите мне</h2>
+                <hr class="line">
+                <div class="subtitle_bg-second">
+                    Возникло желание познакомиться поближе или уточнить детали?
+                    <br>
+                    Воспользуйтесь этой формой и я обязательно отвечу Вам.
+                </div>
+                <form action="#" id="form_1" class="form contacts__form">
+                    <div class="box">
+                        <input name="name" placeholder="Ваше имя" type="text">
+                    </div>
+                    <div class="box">
+                        <input name="email" placeholder="Ваш E-mail" type="email">
+                    </div>
+                    <div class="box">
+                        <textarea class="form__text" name="text" placeholder="Сообщение" type="text"></textarea>
+                    </div>
+   
+                    <button class="form__button">отправить сообщение</button>
+                </form>
+            </div>
         </section>
 
         <footer class="footer">
-            
+            <div class="container">
+                <div class="footer__content">
+                    <ul class="footer__list">
+                        <li>
+                            <a href="https://github.com/Traniks" class="footer__list-item" target="_blank">
+                                <span class="icon-github"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:andert2017@gmail.com?subject=Предложение о" class="footer__list-item" target="_blank" >
+                                <span class="icon-envelope"></span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="footer__copyright">© 2023 Tregubov Andrey</div>
+                </div>
+            </div>
         </footer>
     </main>
 </body>
