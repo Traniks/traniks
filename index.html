@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="src/css/animate.min.css">
     <link rel="stylesheet" href="src/css/fonts.css">
     <link rel="stylesheet" href="src/css/icons.css">
     <link rel="stylesheet" href="src/css/index.min.css">
@@ -26,14 +27,14 @@
         <header class="header">
             <div class="container">
                 <div class="header-wrapper">
-                    <div class="header__logo">
-                        <a  href="#" class="header__logo-item">Трегубов Андрей</a>
+                    <div class="header__logo animate__animated animate__bounceIn wow" data-wow-duration="0.5s" data-wow-delay="0.3s">
+                        <a  href="https://traniks.github.io/" class="header__logo-item">Трегубов Андрей</a>
                     </div>
                     <ul class="header__list">
-                        <li class="header__list-item header__list-item_active">Главная</li>
-                        <li class="header__list-item">Мои работы</li>
-                        <li class="header__list-item">Навыки</li>
-                        <li class="header__list-item">Контакты</li>
+                        <li class="header__list-item header__list-item_active animate__animated animate__bounceIn wow" data-wow-duration="0.5s" data-wow-delay="0.3s">Главная</li>
+                        <li class="header__list-item animate__animated animate__bounceIn wow" data-wow-duration="0.5s" data-wow-delay="0.4s">Мои работы</li>
+                        <li class="header__list-item animate__animated animate__bounceIn wow" data-wow-duration="0.5s" data-wow-delay="0.5s">Навыки</li>
+                        <li class="header__list-item animate__animated animate__bounceIn wow" data-wow-duration="0.5s" data-wow-delay="0.6s">Контакты</li>
                     </г>
                 </div>
             </div>
@@ -41,10 +42,11 @@
 
         <section class="projects">
             <div class="container">
-                <div class="projects__content">
+                <div class="projects__head animate__animated animate__fadeInUp wow" data-wow-duration="0.5s" data-wow-delay="0.7s">
                     <h2 class="title">мои работы</h2>
                     <hr class="line">
-                    <h3 class="subtitle_bg-second">Это все мои работы:</h3>
+                    <h3 class="title__subtitle_bg-second">Это все мои работы:</h3>
+                </div>
                     <div class="projects__wrapper">
 
                         <!-- item-1 -->
@@ -78,46 +80,51 @@
                         </div>
 
                     </div>
-                </div>
             </div>
         </section>
 
         <section class="skills">
             <div class="container">
-                <h2 class="title">мои навыки</h2>
-                <hr class="line">
-                <h3 class="subtitle_bg-white">На данный этап я обладаю знаниями о:</h3>
-                <ul class="skills__list">
-                    <li class="skills__list-item">HTML(5) & CSS(3)</li>
-                    <li class="skills__list-item">HTML & CSS</li>
-                    <li class="skills__list-item">HTML & CSS</li>
-                    <li class="skills__list-item">HTML & CSS</li>
-                    <li class="skills__list-item">HTML & CSS</li>
+                <div class="skills__head animate__animated animate__fadeInUp wow" data-wow-duration="0.5s" data-wow-delay="0.3s">
+                    <h2 class="title">мои навыки</h2>
+                    <hr class="line">
+                    <h3 class="title__subtitle_bg-white">На данный этап я обладаю знаниями о:</h3>
+                </div>
+                <ul class="skills__list animate__animated animate__fadeInUp wow" data-wow-duration="0.5s" data-wow-delay="0.3s">
+                    <li class="skills__list-item"><span>Интернет:</span> HTTP, хостинг, домен</li>
+                    <li class="skills__list-item"><span>HTML:</span> Основы SEO, сематические элементы, формы и валидация</li>
+                    <li class="skills__list-item"><span>CSS:</span> препроцессоры Sass|Scss, медиа запросы</li>
+                    <li class="skills__list-item"><span>JS:</span> работа с DOM, Fethc API, ES6+</li>
+                    <li class="skills__list-item"><span>Веб-безопасность:</span> HTTPS</li>
+                    <li class="skills__list-item"><span>Инструменты:</span> Git|GitHub, Gulp, Webpack, npm</li>
+                    <li class="skills__list-item"><span>Фрейморки:</span> Vue.js</li>
                 </ul>
             </div>
         </section>
 
         <section class="contacts">
             <div class="container">
-                <h2 class="title">напишите мне</h2>
-                <hr class="line">
-                <div class="subtitle_bg-second">
-                    Возникло желание познакомиться поближе или уточнить детали?
-                    <br>
-                    Воспользуйтесь этой формой и я обязательно отвечу Вам.
+                <div class="contacts__head animate__animated animate__fadeInUp wow" data-wow-duration="0.5s" data-wow-delay="0.3s">
+                    <h2 class="title">напишите мне</h2>
+                    <hr class="line">
+                    <div class="title__subtitle_bg-second">
+                        Возникло желание познакомиться поближе или уточнить детали?
+                        <br>
+                        Воспользуйтесь этой формой и я обязательно отвечу Вам.
+                    </div>
                 </div>
                 <form action="#" id="form_1" class="form contacts__form">
-                    <div class="box">
+                    <div class="box animate__animated animate__bounceInLeft wow" data-wow-duration="1s" data-wow-delay="0.3s">
                         <input name="name" placeholder="Ваше имя" type="text">
                     </div>
-                    <div class="box">
+                    <div class="box animate__animated animate__bounceInRight wow" data-wow-duration="1s" data-wow-delay="0.3s">
                         <input name="email" placeholder="Ваш E-mail" type="email">
                     </div>
-                    <div class="box">
+                    <div class="box animate__animated animate__bounceInLeft wow" data-wow-duration="1s" data-wow-delay="0.3s">
                         <textarea class="form__text" name="text" placeholder="Сообщение" type="text"></textarea>
                     </div>
    
-                    <button class="form__button">отправить сообщение</button>
+                    <button class="form__button animate__animated animate__bounceInRight wow" data-wow-duration="1s" data-wow-delay="0.3s">отправить сообщение</button>
                 </form>
             </div>
         </section>
@@ -127,12 +134,12 @@
                 <div class="footer__content">
                     <ul class="footer__list">
                         <li>
-                            <a href="https://github.com/Traniks" class="footer__list-item" target="_blank">
+                            <a href="https://github.com/Traniks" class="footer__list-item animate__animated animate__fadeInUp wow" data-wow-duration="1s" data-wow-delay="0.3s" target="_blank">
                                 <span class="icon-github"></span>
                             </a>
                         </li>
                         <li>
-                            <a href="mailto:andert2017@gmail.com?subject=Предложение о" class="footer__list-item" target="_blank" >
+                            <a href="mailto:andert2017@gmail.com?subject=Предложение о" class="footer__list-item animate__animated animate__fadeInUp wow" data-wow-duration="1s" data-wow-delay="0.7s" target="_blank" >
                                 <span class="icon-envelope"></span>
                             </a>
                         </li>
@@ -142,5 +149,8 @@
             </div>
         </footer>
     </main>
+
+    <script src="src/js/wow.min.js"></script>
+    <script src="src/js/index.js"></script>
 </body>
 </html>

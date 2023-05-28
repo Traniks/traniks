@@ -1,5 +1,5 @@
 .hello {
-    min-height: 600px;
+    min-height: 1000px;
     position: relative;
     @include bg;
     background-image: url("../img/bg3.jpg");
@@ -19,12 +19,13 @@
     &__title {
         margin: 0;
         font-weight: 400;
-        font-size: 16px;
+        font-size: 18px;
         font-style: normal;
         text-transform: none;
         color: $text-second;
     }
     &__subtitle {
+        line-height: 35px;
         margin: 10px 0 0;
         font-weight: 700;
         font-size: 40px;

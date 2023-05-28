@@ -4,24 +4,24 @@
     text-align: center;
     line-height: 24px;
     font-size: 32px;
-    font-weight: 400;
+    font-weight: 600;
     text-transform: uppercase;
-}
-.subtitle {
-    &_bg-white {
-        margin: 0;
-        font-size: 20px;
-        line-height: 24px;
-        color: #666;
-        text-align: center;
-        font-weight: 300;
-    }
-    &_bg-second {
-        margin: 0;
-        font-size: 20px;
-        line-height: 24px;
-        color: $text-main;
-        text-align: center;
-        font-weight: 300;
+    &__subtitle {
+        &_bg-white {
+            margin: 0;
+            font-size: 22px;
+            line-height: 24px;
+            color: #666;
+            text-align: center;
+            font-weight: 400;
+        }
+        &_bg-second {
+            margin: 0;
+            font-size: 22px;
+            line-height: 24px;
+            color: $text-main;
+            text-align: center;
+            font-weight: 400;
+        }
     }
 }
