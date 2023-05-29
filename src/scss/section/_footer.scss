@@ -1,34 +1,32 @@
 .footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     min-height: 150px;
+    padding: 50px 0 0;
     background-color: $bg-footer;
     &__list {
         display: flex;
         justify-content: center;
+        align-items: center;
         margin: 0;
         padding: 0;
         list-style-type: none;
+        height: 38px;
         &-item {
-            width: 36px;
-            height: 36px;
-            border: solid #a9a9a9 1px;
-            border-radius: 15px;
             margin: 0 5px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-decoration: none;
+            a {
+                text-decoration: none;
+                margin: auto auto;
+                border-radius: 15px;
+                padding: 8px 10px;
+                border: solid #a9a9a9 1px;
+                &:hover {
+                    border: solid $text-second 1px;
+                    span {
+                        color: $text-second;
+                    }
+                }
+            }
             span {
                 color: #a9a9a9;
-            }
-            &:hover {
-                border: solid $text-second 1px;
-                span {
-                    color: $text-second;
-                }
             }
         }
     }
@@ -37,6 +35,6 @@
         color: $text-second;
         text-align: center;
         font-family: 'Raleway';
-        font-weight: 400px;
+        font-weight: 400;
     }
 }

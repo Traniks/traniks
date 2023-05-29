@@ -1,8 +1,8 @@
 .hello {
-    min-height: 1000px;
+    height: 100vh;
     position: relative;
     @include bg;
-    background-image: url("../img/bg3.jpg");
+    background-image: url("../img/bg/bg3.jpg");
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,7 +19,7 @@
     &__title {
         margin: 0;
         font-weight: 400;
-        font-size: 18px;
+        font-size: 24px;
         font-style: normal;
         text-transform: none;
         color: $text-second;
@@ -28,7 +28,7 @@
         line-height: 35px;
         margin: 10px 0 0;
         font-weight: 700;
-        font-size: 40px;
+        font-size: 45px;
         text-transform: none;
         color: $text-second;
     }

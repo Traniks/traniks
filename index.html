@@ -16,8 +16,8 @@
 
         <section class="hello">
             <div class="hello__bg"></div>
-            <div class="hello__info">
-                <div class="container">
+            <div class="container">
+                <div class="hello__info">
                     <h2 class="hello__title">Привет! Меня зовут Андрей, я -</h2>
                     <h1 class="hello__subtitle">FrontEnd разработчик</h1>
                 </div>
@@ -51,31 +51,40 @@
 
                         <!-- item-1 -->
                         <div class="projects__wrapper-item">
-    
+                            <a href="#">
+                                <figure class="projects__content">
+                                    <img src="src/img/projects/site_1.png" alt="">
+                                    <figcaption class="projects__content-overlay">
+                                        <div class="projects__content-text">
+                                            <h2>Сайт Uber</h2>
+                                            <p>HTML+CSS+BOOTSTRAP</p>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </a>
                         </div>
 
                         <!-- item-2 -->
                         <div class="projects__wrapper-item">
-    
                         </div>
 
                         <!-- item-3 -->
-                        <div class="projects__wrapper-item">
+                        <div class="projects__wrapper-item_clean">
     
                         </div>
 
                         <!-- item-4 -->
-                        <div class="projects__wrapper-item">
+                        <div class="projects__wrapper-item_clean">
     
                         </div>
 
                         <!-- item-5 -->
-                        <div class="projects__wrapper-item">
+                        <div class="projects__wrapper-item_clean">
     
                         </div>
 
                         <!-- item-6 -->
-                        <div class="projects__wrapper-item">
+                        <div class="projects__wrapper-item_clean">
     
                         </div>
 
@@ -131,21 +140,19 @@
 
         <footer class="footer">
             <div class="container">
-                <div class="footer__content">
-                    <ul class="footer__list">
-                        <li>
-                            <a href="https://github.com/Traniks" class="footer__list-item animate__animated animate__fadeInUp wow" data-wow-duration="1s" data-wow-delay="0.3s" target="_blank">
-                                <span class="icon-github"></span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="mailto:andert2017@gmail.com?subject=Предложение о" class="footer__list-item animate__animated animate__fadeInUp wow" data-wow-duration="1s" data-wow-delay="0.7s" target="_blank" >
-                                <span class="icon-envelope"></span>
-                            </a>
-                        </li>
-                    </ul>
-                    <div class="footer__copyright">© 2023 Tregubov Andrey</div>
-                </div>
+                <ul class="footer__list">
+                    <li class="footer__list-item animate__animated animate__fadeInUp wow" data-wow-duration="1s" data-wow-delay="0.7s" target="_blank">
+                        <a href="https://github.com/Traniks">
+                            <span class="icon-github"></span>
+                        </a>
+                    </li>
+                    <li class="footer__list-item animate__animated animate__fadeInUp wow" data-wow-duration="1s" data-wow-delay="0.7s" target="_blank">
+                        <a href="mailto:andert2017@gmail.com?subject=Предложение о" target="_blank" >
+                            <span class="icon-envelope"></span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="footer__copyright">© 2023 Tregubov Andrey</div>
             </div>
         </footer>
     </main>

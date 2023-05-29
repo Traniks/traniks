@@ -7,16 +7,13 @@
         top: 0;
     }
     &-wrapper {
-        height: 50px;
         display: flex;
         justify-content: space-between;
-        align-items: center;
     }
     &__logo {
         cursor: pointer;
         &-item {
-            display: flex;
-            align-items: center;
+            display: block;
             height: 50px;
             color: $text-main;
             font-family: 'Caveat';
@@ -28,14 +25,12 @@
     &__list {
         display: flex;
         justify-content: space-between;
-        align-items: center;
         width: 370px;
         margin: 0;
         padding: 0;
         &-item {
             display: flex;
             align-items: center;
-            height: 50px;
             font-weight: 400;
             font-size: 16px;
             list-style-type: none;
