@@ -7,6 +7,27 @@
     max-width: 950px;
     margin: 0 auto;
 }
+@media (max-width: 1100px) {
+    .container {
+        max-width: 900px;
+        margin: 0 100px;
+    }
+}
+@media (max-width: 900px) {
+    .container {
+        margin: 0 50px;
+    }
+}
+@media (max-width: 576px) {
+    .container {
+        margin: 0 35px;
+    }
+}
+@media (max-width: 420px) {
+    .container {
+        margin: 0 20px;
+    }
+}
 
 body {
     background-color: #ffffff;
@@ -27,5 +48,3 @@ body {
 @import "section/skills";
 @import "section/contacts";
 @import "section/footer";
-
-@import "media";

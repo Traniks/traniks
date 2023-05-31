@@ -38,3 +38,13 @@
         font-weight: 400;
     }
 }
+@media (max-width: 420px) {
+    .footer {
+        min-height: 110px;
+        padding: 20px 0 0;
+        &__copyright {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+    }
+}

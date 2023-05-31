@@ -33,3 +33,39 @@
         color: $text-second;
     }
 }
+
+@media (max-width: 800px) {
+    .hello {
+        &__title {
+            font-size: 20px;
+        }
+        &__subtitle {
+            font-size: 40px;
+        }
+    }
+}
+@media (max-width: 550px) {
+    .hello {
+        &__title {
+            font-size: 16px;
+            line-height: 18px;
+        }
+        &__subtitle {
+            font-size: 30px;
+            line-height: 24px;
+            margin: 5px 0 0;
+        }
+    }
+}
+@media (max-width: 420px) {
+    .hello {
+        &__title {
+            font-size: 14px;
+            line-height: 16px;
+        }
+        &__subtitle {
+            font-size: 24px;
+            line-height: 18px;
+        }
+    }
+}

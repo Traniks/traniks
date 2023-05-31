@@ -1,8 +1,47 @@
 .contacts {
     min-height: 600px;
-    padding: 100px 0 90px;
+    padding: 80px 0 100px;
     background-color: $bg-second;
+    &__subtext {
+        line-height: 30px;
+    }
     &__form {
         margin: 35px auto 0 auto;
+    }
+}
+
+@media (max-width: 1099px) {
+    .contacts {
+        padding: 70px 0 80px;
+    }
+}
+@media (max-width: 800px) {
+    .contacts {
+        padding: 60px 0 70px;
+    }
+}
+@media (max-width: 700px) {
+    .contacts {
+        &__subtext {
+            font-size: 16px;
+            line-height: 20px;
+        }
+        &__form {
+            margin: 25px auto 0 auto;
+        }
+    }
+}
+@media (max-width: 420px) {
+    .contacts {
+        min-height: 435px;
+        padding: 40px 0 55px;
+        &__subtext {
+            margin: 0 auto;
+            line-height: 15px;
+            width: 250px;
+        }
+        &__form {
+            margin: 15px auto 0 auto;
+        }
     }
 }

@@ -2,7 +2,8 @@
     width: 100%;
     background-color: $bg-main;
     border-bottom: 1px solid $bg-second;
-    &_active {
+    z-index: 1;
+    &_fixed {
         position: fixed;
         top: 0;
     }
@@ -12,14 +13,15 @@
     }
     &__logo {
         cursor: pointer;
-        &-item {
-            display: block;
-            height: 50px;
+        display: flex;
+        align-items: center;
+        height: 50px;
+        text-decoration: none;
+        &-text {
             color: $text-main;
             font-family: 'Caveat';
             font-size: 33px;
             font-weight: 700;
-            text-decoration: none;
         }
     }
     &__list {
@@ -31,16 +33,135 @@
         &-item {
             display: flex;
             align-items: center;
-            font-weight: 400;
-            font-size: 16px;
-            list-style-type: none;
-            color: $text-main;
-            cursor: pointer;
+            a {
+                font-weight: 400;
+                font-size: 16px;
+                list-style-type: none;
+                color: $text-main;
+                cursor: pointer;
+                text-decoration: none;
+            }
             &:hover {
-                color: $text-active;
+                a {
+                    color: $text-active;
+                }
             }
             &_active {
-                color: $text-active;
+                a {
+                    color: $text-active;
+                }
+            }
+        }
+    }
+    &__hamburger {
+        display: none;
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 30px;
+        cursor: pointer;
+        span {
+            display: block;
+            background-color: #000000;
+            height: 3px;
+            width: 100%;
+            margin-bottom: 3px;
+            transition: 0.5s all;
+            &:last-child {
+                margin-bottom: 0px;
+            }
+        }
+        &_active {
+            span {
+                margin-bottom: -3px;
+                &:nth-child(1) {
+                    transform: rotate(-45deg);
+                }
+                &:nth-child(2) {
+                    display: none;
+                }
+                &:nth-child(3) {
+                    transform: rotate(45deg);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .header {
+        &__logo {
+            &-text {
+                font-size: 25px;
+            }
+        }
+        &__list {
+            width: 330px;
+            justify-content: end;
+            &-item {
+                font-weight: 600;
+                font-size: 15px;
+                margin-left: 15px;
+            }
+        }
+    }
+}
+@media (max-width: 700px) {
+    .header {
+        &__logo {
+            &-text {
+                font-size: 22px;
+            }
+        }
+        &__list {
+            position: fixed;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            top: 0;
+            left: -100%;
+            width: 60%;
+            height: 100vh;
+            padding: 20px 15px;
+            background-color: rgba(0,0,0, 0.85);
+            transition: 0.6s all;
+            text-align: center;
+            z-index: 1;
+            &_active {
+                left: 0;
+            }
+            &-item {
+                margin: 0 0 30px;
+                a {
+                    display: block;
+                    height: 50px;
+                    width: 350px;
+                    padding: 15px 0;
+                    font-size: 24px;
+                    line-height: 22px;
+                    color: $text-main_white;
+                }
+                &_active {
+                    a {
+                        color: $text-active;
+                    }
+                }
+            }
+        }
+        &__hamburger {
+            display: block;
+        }
+    }
+}
+@media (max-width: 420px) {
+    .header {
+        &__list {
+            width: 80%;
+        }
+        &-item {
+            a {
+                font-size: 22px;
             }
         }
     }

@@ -7,21 +7,49 @@
     font-weight: 600;
     text-transform: uppercase;
     &__subtitle {
-        &_bg-white {
+        &_bg-white, &_bg-second {
             margin: 0;
             font-size: 22px;
             line-height: 24px;
-            color: #666;
             text-align: center;
             font-weight: 400;
         }
+        &_bg-white {
+            color: #666;
+        }
         &_bg-second {
-            margin: 0;
-            font-size: 22px;
-            line-height: 24px;
             color: $text-main;
-            text-align: center;
-            font-weight: 400;
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .title {
+        &__subtitle {
+            &_bg-white, &_bg-second {
+                font-size: 18px;
+            }
+        }
+    }
+}
+@media (max-width: 700px) {
+    .title {
+        font-size: 28px;
+        &__subtitle {
+            &_bg-white, &_bg-second {
+                line-height: 18px;
+                font-size: 16px;
+            }
+        }
+    }
+}
+@media (max-width: 420px) {
+    .title {
+        font-size: 22px;
+        &__subtitle {
+            &_bg-white, &_bg-second {
+                font-size: 15px;
+            }
         }
     }
 }
