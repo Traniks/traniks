@@ -22,7 +22,7 @@ function header() {
 
     window.addEventListener("scroll", () => {
         if (scrollY > 600) {
-            header.classList.add("header_active");
+            header.classList.add("header_fixed");
         } else {
             header.classList.remove("header_fixed");
         }
