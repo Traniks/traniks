@@ -1,6 +1,6 @@
 function header() {
 
-    // header list
+    // header list and hamburger
     const menu = document.querySelector('.header__list'),
     menuItem = document.querySelectorAll('.header__list-item'),
     hamburger = document.querySelector('.header__hamburger');
@@ -17,14 +17,17 @@ function header() {
         })
     })
 
-    //header fixed
+    //header sticky
     const header = document.querySelector(".header");
+    const sticky = header.offsetTop;
+    const projects = document.querySelector(".projects");
 
     window.addEventListener("scroll", () => {
-        if (scrollY > 600) {
-            header.classList.add("header_fixed");
+        if (window.pageYOffset >= sticky) {
+            header.classList.add("header_sticky");
+            projects.classList.add("projects_sticky");
         } else {
-            header.classList.remove("header_fixed");
+            header.classList.remove("header_sticky");
         }
     })
 

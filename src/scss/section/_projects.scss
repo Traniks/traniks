@@ -2,6 +2,9 @@
     min-height: 600px;
     padding: 80px 0 100px;
     background-color: $bg-second;
+    &_sticky {
+        padding: 140px 0 100px;
+    }
     &__wrapper {
         margin-top: 30px;
         display: flex;

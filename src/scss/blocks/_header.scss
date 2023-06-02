@@ -1,9 +1,10 @@
 .header {
+    position: relative;
     width: 100%;
     background-color: $bg-main;
     border-bottom: 1px solid $bg-second;
     z-index: 1;
-    &_fixed {
+    &_sticky {
         position: fixed;
         top: 0;
     }
