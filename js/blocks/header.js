@@ -17,20 +17,6 @@ function header() {
         })
     })
 
-    //header sticky
-    const header = document.querySelector(".header");
-    const sticky = header.offsetTop;
-    const projects = document.querySelector(".projects");
-
-    window.addEventListener("scroll", () => {
-        if (window.pageYOffset >= sticky) {
-            header.classList.add("header_sticky");
-            projects.classList.add("projects_sticky");
-        } else {
-            header.classList.remove("header_sticky");
-        }
-    })
-
 }
 
 export default header;

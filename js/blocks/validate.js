@@ -39,37 +39,6 @@ function validate() {
                 errorMessage: "Это поле обязательно.",
             },
         ])
-        .onSuccess((e) => {
-            e.preventDefault();
-            $.ajax({
-                type: "POST",
-                url: "src/mailer/smart.php",
-                data: $(this).serialize()
-            }).done(function() {
-                $(this).find("input").val("");
-    
-                fadeIn(".overlay");
-                fadeIn("#thanks");
-                
-                $("form").trigger("reset");
-            });
-            console.log("Отправил форму");
-
-            
-            return false;
-        })
-    }
-
-    function fadeIn(el) {
-        let opacity = 0.01;
-        document.querySelector(el).style.display = "block";
-        const timer = setInterval(function() {
-            if(opacity >= 1) {
-                clearInterval(timer);
-            }
-            document.querySelector(el).style.opacity = opacity;
-            opacity += opacity * 0.1;
-        }, 10);
     }
     
     validate_form("#form_1");
